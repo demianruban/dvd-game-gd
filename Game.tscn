@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://dvd-logo.png" type="Texture" id=2]
 [ext_resource path="res://Player.gd" type="Script" id=3]
 [ext_resource path="res://DVD.gd" type="Script" id=4]
 [ext_resource path="res://Game.gd" type="Script" id=5]
+[ext_resource path="res://Screen borders.gd" type="Script" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 30, 30 )
@@ -12,16 +13,10 @@ extents = Vector2( 30, 30 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 130.5, 57 )
 
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 511.875, 11.125 )
-
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 10, 300 )
-
 [sub_resource type="CurveTexture" id=5]
 width = 50
 
-[node name="Game" type="Node2D"]
+[node name="Game (make resizeable)" type="Node2D"]
 script = ExtResource( 5 )
 
 [node name="Player" type="Area2D" parent="."]
@@ -47,27 +42,12 @@ position = Vector2( -1.5, -1 )
 shape = SubResource( 2 )
 
 [node name="Screen borders" type="StaticBody2D" parent="."]
-
-[node name="horizontal" type="CollisionShape2D" parent="Screen borders"]
-position = Vector2( 511.875, -11.125 )
-shape = SubResource( 3 )
-
-[node name="vertical" type="CollisionShape2D" parent="Screen borders"]
-position = Vector2( -10, 300 )
-shape = SubResource( 4 )
-
-[node name="horizontal2" type="CollisionShape2D" parent="Screen borders"]
-position = Vector2( 512, 611 )
-shape = SubResource( 3 )
-
-[node name="vertical2" type="CollisionShape2D" parent="Screen borders"]
-position = Vector2( 1034, 300 )
-shape = SubResource( 4 )
+script = ExtResource( 6 )
 
 [node name="bg" type="Sprite" parent="."]
 modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 512, 300 )
-scale = Vector2( 20.48, 600 )
+position = Vector2( 894, 498 )
+scale = Vector2( 35.76, 996 )
 z_index = -1
 texture = SubResource( 5 )
 

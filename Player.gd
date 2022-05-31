@@ -11,9 +11,12 @@ func _ready():
 	#DVD.connect("player_dies", self, "death")# Replace with function body.
 	
 func _input(event):
+	# TODO make it more reusable
 	if event.is_action_pressed("click"):
 		target = get_global_mouse_position()
-
+	elif event is InputEventScreenTouch:
+		target = event.position
+		
 func _process(delta):
 	if target:
 		
