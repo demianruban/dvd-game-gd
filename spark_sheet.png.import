@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex"
+path="res://.import/spark_sheet.png-2d9c8c9e9a83d669b2b4a6c7a1bf12e4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://icon.png"
-dest_files=[ "res://.import/icon.png-487276ed1e3a0c39cad0279d744ee560.stex" ]
+source_file="res://spark_sheet.png"
+dest_files=[ "res://.import/spark_sheet.png-2d9c8c9e9a83d669b2b4a6c7a1bf12e4.stex" ]
 
 [params]
 

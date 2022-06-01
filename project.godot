@@ -16,8 +16,10 @@ config/icon="res://icon.png"
 
 [display]
 
-window/size/width=1280
-window/size/height=720
+window/size/width=640
+window/size/height=480
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
 
 [input]
 
@@ -34,3 +36,8 @@ touch={
 [physics]
 
 common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/shadows/filter_mode=0
+environment/default_clear_color=Color( 0, 0, 0, 1 )
