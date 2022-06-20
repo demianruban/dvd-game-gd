@@ -2,7 +2,9 @@
 
 >Run from dvd logo on splash screen at all costs!
 
-Control the player (godot logo) by clicking your mouse.
+Control broken pixel to avoid being wiped out by the DVD logo.
+
+To move press any point on screen.
 
 The level becomes harder with time (DVD logo moves faster).
 
